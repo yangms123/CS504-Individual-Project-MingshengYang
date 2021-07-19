@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Mu5DhdDbh+OITkM9yGDLP9yZzKdt9dFarQHvmB1/U7SjHMalCMeHbf4aZH5aEzxqITu2ySY3Hcl4SRjUzFxQgw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\v-mingsy\\Documents\\CS504_Software_engineering\\CS504-Individual-Project-MingshengYang\\Submission2\\HelloWorld_IP01\\HelloWorld_IP01.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\v-mingsy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
