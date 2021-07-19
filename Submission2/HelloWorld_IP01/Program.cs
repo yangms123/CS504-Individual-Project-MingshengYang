@@ -8,7 +8,7 @@ namespace HelloWorld_IP01
         {
             Console.WriteLine("Hello World!");
 
-            Console.WriteLine("Adding this from dev2");
+            Console.WriteLine("Adding this from dev2, Dev2 is fixing a bug on an old version");
 
             Console.WriteLine("Adding this from dev 1");
 
