@@ -11,6 +11,8 @@ namespace HelloWorld_IP01
             Console.WriteLine("Adding this from dev2");
 
             Console.WriteLine("Adding this from dev 1");
+
+            Console.WriteLine("This is a new version");
         }
     }
 }
