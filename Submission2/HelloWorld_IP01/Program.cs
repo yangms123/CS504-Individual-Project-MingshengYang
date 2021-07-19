@@ -7,6 +7,9 @@ namespace HelloWorld_IP01
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Console.WriteLine("Adding this from dev2");
+
             Console.WriteLine("Adding this from dev 1");
         }
     }
