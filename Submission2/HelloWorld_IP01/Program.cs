@@ -13,6 +13,8 @@ namespace HelloWorld_IP01
             Console.WriteLine("Adding this from dev 1");
 
             Console.WriteLine("This is a new version");
+
+            Console.WriteLine("Dev1 is working on a new function");
         }
     }
 }
