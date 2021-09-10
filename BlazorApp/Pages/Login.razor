@@ -1,0 +1,62 @@
+@page "/login"
+@using BlazorApp.Data
+@inject LoginService MyLogin
+@inject SqliteService db
+@inject NavigationManager NavigationManager
+
+
+@* <h1>@status</h1> *@
+
+@if (@status ==1 )
+{
+    <p> Welcome, @member.Name</p>
+    @* <button @onclick= "logout">Logout</button> *@
+}
+else{
+    <p> Welcome, please login</p>
+    <label for="fname">Account:</label>
+    <input type="text" @bind="@username" id="username" name="username"><br><br>
+    <label for="lname">Password:</label>
+    <input type="password" @bind= "@password" id= "password" name="password"><br><br>
+    <p> @message</p>
+    <button class="btn btn-primary" @onclick= "login">Login</button>
+}
+
+
+@code{
+    private string username;
+    private string password;
+    private string message;
+    private int status{get;set;}=0; //1 means login, 0 means not login
+
+    private MemberData member;
+    async Task login(){             // Task is a built in class, to perform asynchronous operations
+        @* status = "login suceessful!!!";*@
+        if (await MyLogin.LoginVerify(this.username, this.password))
+        {
+            status = MyLogin.getlogin();
+            member = MyLogin.getLoggedinUserInfo();
+            //NavigationManager.NavigationTo("/"); //bavigate back to home
+
+        }
+        else
+        {
+            message = "User name or password is incorrect";
+        }
+
+
+        @* MyLogin.setlogin(1);
+        status = MyLogin.getlogin();
+        this.member = await MyLogin.GetMemberInfo(); *@
+    }
+    @* protected override async Task OnInitializedAsync(){
+        db.connectDB();
+        db.createTable();
+        db.createNewMember("Mingsheng","cityu");
+        this.status = await MyLogin.GetLoginAsync();
+    }
+    void logout(){
+    MyLogin.setlogin(0);
+    status = MyLogin.getlogin();
+    } *@
+}

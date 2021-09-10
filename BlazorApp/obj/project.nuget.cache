@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "U6xuIAfGQT3t9GM3daa8L3iRE3RPtcfTXb95+7wh06nQLiZOSWWRLkEQAaPYiCDjYuzW3KLzWIOfLcUHNRu3lg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\v-mingsy\\Documents\\CS504_Software_engineering\\hop10-blazordeployment-yangms123\\Module 10\\BlazorApp\\BlazorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\v-mingsy\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.114.3\\stub.system.data.sqlite.core.netstandard.1.0.114.3.nupkg.sha512",
+    "C:\\Users\\v-mingsy\\.nuget\\packages\\system.data.sqlite.core\\1.0.114.3\\system.data.sqlite.core.1.0.114.3.nupkg.sha512"
+  ],
+  "logs": []
+}

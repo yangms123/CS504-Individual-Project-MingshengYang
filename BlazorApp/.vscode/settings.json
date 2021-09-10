@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net5.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/47841445-3d42-40b3-be3b-11aefa3dc44c/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/CS504MingshengYang"
+}

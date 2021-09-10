@@ -1,0 +1,36 @@
+﻿@page "/todo" /*add url for this page*/
+
+<h3>Todo</h3>
+
+
+<h3>TodoHHHHH</h3>
+
+<p>Number of todo items:@todos.Count(todo => !todo.IsDone) </p>
+
+@* The <ul> tag defines an unordered (bulleted) list. Use the <ul> tag together with the <li> tag to create unordered lists. 
+    show todo items which are on the list on the webpage*@
+<ul>
+    @foreach (var todo in todos)
+    {
+        <li>@todo.Title</li>
+    }
+</ul>
+
+@* add a onclick button event - AddTodo. By clicking the button, the item is added to the todos array. *@
+<input placeholder="Something todo" @bind="newTodo"/> 
+<button @onclick="AddTodo">Add todo</button>
+
+@code{
+    private IList<TodoItem> todos = new List<TodoItem>();
+    private string newTodo;
+
+    @* This AddTodo function is used to add item into the todo array, and reset the newtodo  *@
+    private void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(new TodoItem{Title = newTodo});
+            newTodo = string.Empty;
+        }
+    }
+}
